@@ -1,0 +1,22 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Mono';
+}
+
+.vue-command {
+  .term {
+    border: 0;
+  }
+
+  .term-std {
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .term-stdout p {
+    margin: 0;
+  }
+}

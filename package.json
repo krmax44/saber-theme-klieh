@@ -1,0 +1,68 @@
+{
+  "name": "saber-theme-klieh",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "email": "hi@krmax44.de",
+    "name": "krmax44",
+    "url": "https://krmax44.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krmax44/saber-theme-klieh.git"
+  },
+  "description": "A theme mimicking a terminal.",
+  "keywords": [
+    "saber",
+    "saber-theme",
+    "cli",
+    "terminal",
+    "klieh"
+  ],
+  "scripts": {
+    "test": "echo lol",
+    "build": "vue-compile src -o dist",
+    "prepublishOnly": "yarn build",
+    "dev:website": "saber website",
+    "build:website": "saber build website",
+    "lint": "xo"
+  },
+  "files": [
+    "dist"
+  ],
+  "xo": {
+    "extends": [
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "unicorn/filename-case": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "no-await-in-loop": "off"
+    },
+    "prettier": true
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "useTabs": true
+  },
+  "dependencies": {
+    "saber-plugin-search": "^0.1.0",
+    "typeface-fira-mono": "^0.0.72",
+    "vue-command": "^6.5.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "saber": "^0.10.2",
+    "saber-plugin-query-posts": "^0.4.0",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "vue-compile": "^0.6.0",
+    "xo": "^0.25.3"
+  },
+  "peerDependencies": {
+    "saber": ">=0.10.0"
+  }
+}
