@@ -1,6 +1,6 @@
 {
   "name": "saber-theme-klieh",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "author": {
     "email": "hi@krmax44.de",
@@ -47,7 +47,7 @@
     "useTabs": true
   },
   "dependencies": {
-    "saber-plugin-search": "^0.1.0",
+    "saber-plugin-search": ">=0.1.0",
     "typeface-fira-mono": "^0.0.72",
     "vue-command": "^6.5.2"
   },
@@ -55,6 +55,7 @@
     "autoprefixer": "^9.6.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "np": "^5.1.0",
     "saber": "^0.10.2",
     "saber-plugin-query-posts": "^0.4.0",
     "sass": "^1.22.12",
