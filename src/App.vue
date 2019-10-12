@@ -24,9 +24,10 @@ async function commandRoutes() {
 	for (const { slug, permalink, content } of routes) {
 		const command = slug === 'index' ? 'home' : slug;
 		cmds[command] = async () => {
-			const r = await new Promise(resolve => {
-				this.$router.push(permalink, resolve);
-			});
+			if (this.$route.path === this.$router.resolve(permalink).resolved.path)
+				return content;
+
+			await this.$router.push(permalink);
 			await this.$nextTick();
 
 			return content;
