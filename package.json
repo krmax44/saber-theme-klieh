@@ -47,18 +47,18 @@
     "useTabs": true
   },
   "dependencies": {
-    "saber-plugin-search": ">=0.1.0",
+    "saber-plugin-search": ">=0.1.1",
     "typeface-fira-mono": "^0.0.72",
-    "vue-command": "^6.5.2"
+    "vue-command": "^7.0.4"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "eslint-config-prettier": "^6.0.0",
+    "autoprefixer": "^9.6.4",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "np": "^5.1.0",
-    "saber": "^0.10.2",
-    "saber-plugin-query-posts": "^0.4.0",
-    "sass": "^1.22.12",
+    "np": "^5.1.1",
+    "saber": "^0.10.4",
+    "saber-plugin-query-posts": "^0.4.5",
+    "sass": "^1.23.0",
     "sass-loader": "^8.0.0",
     "vue-compile": "^0.6.0",
     "xo": "^0.25.3"
